@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000;
+    color: #aaa;
+}
+a {
+    color: #fff;
+}
+
+/* NAV */
+.header__box {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.header__ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    gap: 40px;
+}
+.ul__list {
+    padding: 10px;
+}
+.list__link {
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    transition: border 0.3s, color 0.3s;
+    font-size: 1.75rem;
+}
+.link--active {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #6556b7;
+    color: #6556b7;
+}
+
+
+.list__link:hover {
+    padding-bottom: 3px;
+    color: #6556b7;
+    border-bottom: 2px solid #6556b7;
+}
+
+.link--tienda:hover {
+    border: 1px solid #6556b7;
+}
+
+@media(max-width:995px) {
+    .header__box {
+        display: none;
+    }
+}
+
+/* Navegación tlf*/
+
+.menu-container {
+    position: absolute;
+}
+
+.menu-label {
+    display: none;
+}
+
+.menu-label input[type="checkbox"] {
+    display: none;
+}
+
+
+.hidden-buttons {
+    display: none;
+    margin-top: 10px;
+}
+
+.header__ul--tlf {
+    width: 9.5rem;
+    list-style: none;
+    gap: 40px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #aaa;
+    z-index: 40;
+}
+
+.list__link--tlf {
+    color: #fff;
+    border-left: 3px solid transparent;
+    transition: border 0.5s, color 0.3s;
+}
+.link--active-tlf {
+    padding-left: 6px;
+    border-left: 2px solid #6556b7;
+    color: #6556b7;
+}
+.list__link--tlf:hover {
+    padding-left: 6px;
+    border-left: 2px solid #6556b7;
+    color: #6556b7;
+}
+
+
+@media(max-width:995px) {
+    .menu-container {
+        position: absolute;
+        padding: 15px 10px;
+        z-index: 10;
+    }
+    
+    .menu-label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .menu-label input[type="checkbox"] {
+        display: none;
+    }
+    
+    .icon-box {
+        width: 1.5rem;
+        color: #aaa;
+        height: 1.60rem;
+        border: 1px solid #fff;
+        background-color: #222;
+        border-radius: 4px;
+        scale: 2;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        transition: all 0.3s;
+        margin: 10px 10px;
+    }
+    
+    .menu-label input[type="checkbox"]:checked + .icon-box {
+        border-color: #6556b7;
+    }
+    
+    .menu-label input[type="checkbox"]:checked + .icon-box i {
+        color: white;
+    }
+    
+    .hidden-buttons {
+        display: none;
+        margin-top: 10px;
+    }
+    
+    .menu-label input[type="checkbox"]:checked ~ .hidden-buttons {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        scale: 1.2;
+        z-index: 20;
+    }
+}
+
+/* Habilidades */
+
+form {
+    background: #111;
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    position: relative;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+form::after, form::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 60%, #6556b7);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 4px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+form::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.container h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.form-input {
+    padding: 6px 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 2px solid #6666;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #0003;
+    background-color: transparent;
+    color: #ddd;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #ddd;
+}
+
+option {
+    background-color: #111;
+}
+
+textarea {
+    min-width: 100%;
+    resize: none;
+    min-height: 102px;
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 0.88em;
+    line-height: 2;
+}
+
+.checkbox {
+    width: auto;
+    height: 10px;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 8px 6px 20px 8px;
+    margin: 20px;
+}
+
+legend {
+    padding: 0 6px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.terminos {
+    color: #69f;
+    text-decoration: none;
+}
+
+.terminos:hover {
+    color: #69f;
+    text-decoration: underline;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+@media(max-width:995px) {
+    form {
+        max-width: 350px;
+        margin: 0;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
