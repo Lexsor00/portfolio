@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <!-- Metas -->
-    <meta name="title" content="Inicio • Lexsor00">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Lexsor00">
-    <meta name="description" content="Portfolio de Lexsor00">
-    <meta name="keywords" content="Lexsor Lexsor00 lexsor lexor lexsor00">
-    <!-- Links -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="multimedia/fotos/favicon.png" type="imagen/png">
-    <!-- Info Página -->
-    <title>Inicio • Lexsor00</title>
-</head>
+    <head>
+        <!-- Metas -->
+        <meta name="title" content="Inicio • Portfolio">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lexsor00">
+        <meta name="description" content="Página Web sobre videojuegos">
+        <meta name="keywords" content="Lexsor Lexsor00 lexsor lexor lexsor00">
+        <!-- Links -->
+        <link rel="stylesheet" href="assets/css/nav.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="icon" href="assets/multimedia/img/favicon.png" type="imagen/png">
+        <!-- Info Página -->
+        <title>Inicio • Portfolio</title>
+    </head>
 <body>
     <header class="header">
         <nav class="header__nav">
             <!-- Nav Pc -->
-            <div class="header__box">
+            <div class="nav__pc">
+                <h3>Lexsor00</h3>
                 <ul class="header__ul">
-                    <li class="ul__list"><a href="#" class="list__link link--active"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                    <li class="ul__list"><a href="services/index.html" class="list__link"><i class="fa-solid fa-store"></i> Services</a></li>
-                    <li class="ul__list"><a href="skills/index.html" class="list__link"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a></li>
-                    <li class="ul__list"><a href="contact/index.html" class="list__link"><i class="fa-solid fa-briefcase"></i> Contact</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#minecraft">Minecraft</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
+                <a href="https://github.com/Lexsor00" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow"><i class="fa-brands fa-github"></i></a>
             </div>
             <!-- Nav Tlf-->
-            <div class="menu-container">
+            <div class="nav__tlf">
+                <h3>Lexsor00</h3>
                 <label class="menu-label">
                     <input type="checkbox">
                     <span class="icon-box">
@@ -36,10 +45,12 @@
                     </span>
                     <div class="hidden-buttons">
                         <ul class="header__ul--tlf">
-                            <li class="ul__list"><a href="#" class="list__link--tlf link--active-tlf"><i class="fa-solid fa-house"></i> Inicio</a></a></li>
-                            <li class="ul__list"><a href="services/index.html" class="list__link--tlf"><i class="fa-solid fa-store"></i> Services</a></a></li>
-                            <li class="ul__list"><a href="skills/index.html" class="list__link--tlf"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a></li>
-                            <li class="ul__list"><a href="contact/index.html" class="list__link--tlf"><i class="fa-solid fa-briefcase"></i> Contact</a></li>
+                            <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                            <li><a href="#servicios"><i class="fa-solid fa-tags"></i> Servicios</a></li>
+                            <li><a href="#minecraft"><i class="fa-solid fa-box"></i> Minecraft</a></li>
+                            <li><a href="#skills"><i class="fa-solid fa-hammer"></i> Skills</a></li>
+                            <li><a href="#proyectos"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
+                            <li><a href="#contacto"><i class="fa-solid fa-briefcase"></i> Contacto</a></li>
                         </ul>
                     </div>
                 </label>
@@ -47,28 +58,278 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="home">
-                <!-- Descripción -->
-                <div class="home-img">
-                    <img src="multimedia/fotos/main.jpg">
+        <!-- Inicio -->
+        <section id="inicio">
+            <div class="inicio">
+                <div class="inicio__title">
+                    <h2>Developer & Creador Digital</h2>
+                    <h4>Transformando ideas en experiencias digitales únicas y modernas</h4>
                 </div>
-                <div class="home-content">
-                    <div class="text">
-                        <h1>Hola, Soy <span>Lexsor00</span></h1>
-                        <h3 class="typing-text">Soy un <span></span></h3>
-                        <p>Soy un chico que le gusta dar el máximo potencial de si mismo. Dedico muchas horas de mi vida a programar, configurar y editar proyectos. Y día tras día me enamoro más de este sector</p>
+                <div class="inicio__button">
+                    <a href="" class="btn btn1">Ver Proyectos</a>
+                    <a href="" class="btn">Contactar</a>
+                </div>
+                <div class="inicio__icon">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+        </section>
+        <!-- Servicios -->
+        <section id="servicios">
+            <div class="servicios">
+                <div class="inicio__title servicios__title">
+                    <h3>Mis Servicios</h2>
+                </div>
+                <div class="servicios__content">
+                    <div class="servicios__item">
+                        <img src="assets/multimedia/img/webdev.png" alt="Foto WebDesign">
+                        <h4>Desarrollo Web</h4>
+                        <p>Creación de sitios web modernos y responsivos.</p>
                     </div>
-                    <div class="social-icons">
-                        <a href="https://discord.com/invite/HuPGx4atZk" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://www.tiktok.com/@minehub._" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/daniii._.07_/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.twitch.tv/lexsor00" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow"><i class="fa-brands fa-twitch"></i></i></a>
+                    <div class="servicios__item">
+                        <img src="assets/multimedia/img/uiux.png" alt="Foto WebDesign">
+                        <h4>Diseño UI/UX</h4>
+                        <p>Interfaces y experiencias del usuario excepcionales.</p>
                     </div>
-                    <a href="contact/index.html" class="btn">Contratame</a>
+                    <div class="servicios__item">
+                        <img src="assets/multimedia/img/seo.png" alt="Foto WebDesign">
+                        <h4>SEO</h4>
+                        <p>Optimización y mejora de la visibilidad online.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MineCraft -->
+        <section id="minecraft">
+            <div class="servicios">
+                <div class="inicio__title servicios__title">
+                    <h3>Servicios Minecraft</h2>
+                </div>
+                <div class="servicios__content minecraft__content">
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/config.png" alt="Foto Config">
+                        <h4>Configuración de Plugins</h4>
+                        <p>Instalación y configuración profesional de plugins para tu servidor.</p>
+                    </div>
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/traduc.png" alt="Foto Traducción">
+                        <h4>Traducción de Plugins</h4>
+                        <p>Servicio de traducción precisa de plugins a múltiples idiomas.</p>
+                    </div>
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/server.png" alt="Foto Servidores">
+                        <h4>Configuración de Servidores</h4>
+                        <p>Configuración completa y optimización de servidores Minecraft.</p>
+                    </div>
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/network.png" alt="Foto Network">
+                        <h4>Network Bungee</h4>
+                        <p>Configuración profesional de redes BungeeCord/Velocity.</p>
+                    </div>
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/geyser.png" alt="Foto GeyserMC">
+                        <h4>Configuración de GeyserMC</h4>
+                        <p>Integración de jugadores Bedrock en servidores Java.</p>
+                    </div>
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/tebex.png" alt="Foto Tebex">
+                        <h4>Tienda Tebex</h4>
+                        <p>Implementación y personalización de tiendas online.</p>
+                    </div>
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/tema.png" alt="Foto Tema">
+                        <h4>Temas Tebex</h4>
+                        <p>Instalación y personalización de temas para tu tienda Tebex.</p>
+                    </div>
+                    <div class="servicios__item minecraft__item">
+                        <img src="assets/multimedia/img/webport.png" alt="Foto Web">
+                        <h4>Sitios Web</h4>
+                        <p>Desarrollo de sitios web para ti o tu servidor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills">
+            <div class="habilidades">
+                <div class="inicio__title servicios__title">
+                    <h3>Mis Skills</h2>
+                </div>
+                <div class="slider">
+                    <div class="slider__content">
+                        <div class="slider__item item--1">
+                            <img src="assets/multimedia/img/html.png" alt="Logo Html">
+                        </div>
+                        <div class="slider__item item--2">
+                            <img src="assets/multimedia/img/css.png" alt="Logo Css">
+                        </div>
+                        <div class="slider__item item--3">
+                            <img src="assets/multimedia/img/tailwind.png" alt="Logo TailWind">
+                        </div>
+                        <div class="slider__item item--4">
+                            <img src="assets/multimedia/img/yaml.png" alt="Logo Yaml">
+                        </div>
+                        <div class="slider__item item--5">
+                            <img src="assets/multimedia/img/javascript.png" alt="Logo JavaScript">
+                        </div>
+                        <div class="slider__item item--6">
+                            <img src="assets/multimedia/img/react.png" alt="Logo React">
+                        </div>
+                        <div class="slider__item item--7">
+                            <img src="assets/multimedia/img/html.png" alt="Logo Html">
+                        </div>
+                        <div class="slider__item item--8">
+                            <img src="assets/multimedia/img/css.png" alt="Logo Css">
+                        </div>
+                        <div class="slider__item item--9">
+                            <img src="assets/multimedia/img/tailwind.png" alt="Logo TailWind">
+                        </div>
+                        <div class="slider__item item--10">
+                            <img src="assets/multimedia/img/yaml.png" alt="Logo Yaml">
+                        </div>
+                        <div class="slider__item item--11">
+                            <img src="assets/multimedia/img/javascript.png" alt="Logo JavaScript">
+                        </div>
+                        <div class="slider__item item--12">
+                            <img src="assets/multimedia/img/react.png" alt="Logo React">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Proyectos -->
+        <section id="proyectos">
+            <div class="servicios">
+                <div class="inicio__title servicios__title">
+                    <h3>Proyectos Destacados</h2>
+                </div>
+                <div class="carousel">
+                    <div class="list">
+                        <div class="item">
+                            <img src="assets/multimedia/img/danhub.png" alt="Foto Web Restaurante">
+                            <div class="introduce">
+                                <div class="topic">
+                                    <h4>Web Menus</h4>
+                                </div>
+                                <div class="des">
+                                    <p>Una pequeña web que dispone de 2 tipos diferentes de menus</p>
+                                    <a class="des__link" href="https://lexsor00.github.io/danhub/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ver!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/multimedia/img/minesun.png" alt="Foto Network Minecraft">
+                            <div class="introduce">
+                                <div class="topic">
+                                    <h4>Network Minecraft</h4>
+                                </div>
+                                <div class="des">
+                                    <p>Red de servidores Minecraft con soporte multiplataforma, tienda integrada y sistema de rangos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/multimedia/img/questfotquality.png" alt="Foto Foro Videojuegos">
+                            <div class="introduce">
+                                <div class="topic">
+                                    <h4>Web Foro</h4>
+                                </div>
+                                <div class="des">
+                                    <p>Una pequeña web de videojuegos que cuenta con 2 plataformas y un juego en dicha plataforma</p>
+                                    <a class="des__link" href="https://lexsor00.github.io/QuestForQuality/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ver!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section id="contacto">
+            <div class="servicios">
+                <div class="inicio__title servicios__title">
+                    <h3>Contacto</h2>
+                </div>
+                <div class="contacto__content">
+                    <div class="contacto__item">
+                        <h3>¡Cuentame sobre tu proyecto!</h3>
+                        <p>Estoy disponible para freelance. Contáctame y conversemos sobre cómo puedo ayudarte. Respondo en un periodo de 24h</p>
+                        <div class="icons">
+                            <div class="icons__item">
+                                <a href="mailto:lexsor.dev@gmail.com" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <div class="icons__text">
+                                        <p>Gmail</p>
+                                        <span>lexsor.dev@gmail.com</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="icons__item">
+                                <a href="https://discord.com/invite/HuPGx4atZk" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">
+                                    <i class="fa-brands fa-discord"></i>
+                                    <div class="icons__text">
+                                        <p>Discord</p>
+                                        <span>lexsor00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="icons__item">
+                                <a href="https://www.google.es/maps/place/Madrid/@40.4380986,-3.8443487,11z/data=!3m1!4b1!4m6!3m5!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167279!4d-3.7032905!16zL20vMDU2X3k?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <div class="icons__text">
+                                        <p>Ubicación</p>
+                                        <span>Madrid, Spain</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form action="https://formspree.io/f/manyneoo" method="POST">
+                            <div class="basic">
+                                <h3>Formulario de Contacto</h3>
+                                <div class="form-input">
+                                    <label><i class="fa-solid fa-user"></i> Nombre
+                                        <input type="text" name="Nombre" placeholder="Lexsor00" required minlength="3">
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label><i class="fa-solid fa-envelope"></i> Email
+                                        <input type="email" name="Email" placeholder="example@gmail.com" required>
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label><i class="fa-solid fa-phone"></i> Phone
+                                    <input type="text" name="Asunto" placeholder="+34 123 45 67 89" required>
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <label><i class="fa-solid fa-file-pen"></i> Mensaje
+                                        <textarea rows="6" name="mensaje" placeholder="Intenta dar los máximos detalles posibles..." required></textarea>
+                                    </label>
+                                </div>
+                                <div class="form-input">
+                                    <input class="btn" type="submit" value="Enviar Formulario">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__copy">
+                <a href="https://github.com/Lexsor00" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Lexsor00 <i class="fa-regular fa-copyright"></i> 2026. All rights reserved</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/proyects.js"></script>
 </body>
 </html>
