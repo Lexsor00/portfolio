@@ -13,9 +13,10 @@
 
 body{
     overflow-x: hidden;
-    background-color: #000;
+    background-color: #101325;
     color: #fff;
 }
+
 
 :root{
     --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
@@ -44,14 +45,12 @@ body{
     --item5-opacity: 0;
 }
 
-/* Inicio */
 
-#inicio{
-    background-color: #3337;
+/* Inicio */
+.inicio {
+    position: relative;
     height: 90vh;
 }
-
-
 .inicio__title {
     text-align: center;
     margin: auto;
@@ -59,7 +58,6 @@ body{
 }
 
 .inicio .inicio__title h2 {
-    color: #6556b7;
     font-size: 2rem;
 }
 .inicio .inicio__title h4 {
@@ -67,7 +65,7 @@ body{
     color: #ccc;
     font-size: 1.3rem;
     font-weight: 300;
-    animation: escribir 2s steps(60) forwards;
+    animation: escribir 1.2s steps(60) forwards;
 }
 @keyframes escribir {
     0% { 
@@ -83,39 +81,38 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .btn {
     padding: 8px 16px;
-    border-radius: 40px;
-    color: #6556b7;
-    font-weight: 600;
-    border: 1.5px solid #6556b7;
+    border-radius: 15px;
+    border: 1.5px solid #317ad1;
     transition: 0.3s ease;
-    margin-bottom: 20px;
+    color: #ccc;
 }
 .btn1 {
-    background-color: #6556b7;
-    color: #000;
+    background-color: #317ad1;
 }
 
 .btn:hover {
     transform: scale3d(1.03);
-    background-color: #6556b7;
-    color: #000;
-    box-shadow: 0 0 5px #6556b7;
+    background-color: #317ad1;
+    color: #eee;
+    box-shadow: 0 0 5px #317ad1;
 }
 .btn1:hover {
-    background-color: #5556b8;
+    background-color: #2560a4;
 }
 
 .inicio__icon {
     text-align: center;
-    padding: 180px 0 10px 0;
 }
 
 .inicio__icon i {
-    color: #6556b7;
+    position: absolute;
+    bottom: 15px;
+    color: #eee;
     font-weight: 600;
     font-size: 1.15rem;
     animation: arribaAbajo 1.5s infinite;
@@ -131,10 +128,8 @@ body{
 }
 
 
-/* Servicios */
-#servicios,
-#contacto {
-    background-color: #000;
+.servicios {
+    padding-bottom: 50px;
 }
 
 .servicios__title {
@@ -142,7 +137,7 @@ body{
 }
 
 .servicios__title h3 {
-    color: #6556b7;
+    color: #ccc;
     font-size: 1.5rem;
 }
 
@@ -157,7 +152,7 @@ body{
 }
 
 .servicios__item {
-    background-color: #111;
+    background-color: #161a32;
     padding: 10px;
     width: 275px;
     border-radius: 12px;
@@ -186,14 +181,14 @@ body{
 
 .servicios__item img {
     width: 64px;
-    background-color: #6556b7;
+    background-color: #2a3263;
     border-radius: 50%;
     margin: 6px 12px;
     padding: 6px;
     transition: background-color 0.3s;
 }
 .servicios__item h4 {
-    color: #6556b7;
+    color: #ccc;
     margin: 8px 12px;
     font-size: 1.15rem;
     transition: color 0.3s;
@@ -202,39 +197,39 @@ body{
     text-align: start;
     margin: 6px 12px;
     font-size: 0.9rem;
-    color: #ccc;
+    color: #aaa;
     transition: color 0.3s;
 }
 
 .servicios__item:hover {
-    background-color: #222;
+    background-color: #191f36;
 }
 .servicios__item:hover img {
-    background-color: #5556b8;
+    background-color: #2c3769;
 }
 .servicios__item:hover h4 {
-    color: #5556b8;
+    color: #ddd;
 }
 .servicios__item:hover p {
-    color: #eee;
+    color: #bbb;
 }
-
-
-
 
 /* Minecraft */
 
-#minecraft,
-#proyectos {
-    background-color: #3337;
-}
-
 .minecraft__content {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .minecraft__item {
     width: 300px;
+}
+.minecraft__item i {
+    background-color: #2a3263;
+    scale: 1.1;
+    border-radius: 50%;
+    margin: 6px 12px;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
 .minecraft__item h4 {
@@ -245,10 +240,13 @@ body{
     font-size: 0.8rem;
 }
 
+
+
+
 /* Skills */
 
 .habilidades {
-    margin: 30px 0 120px 0;
+    padding-bottom: 50px;
 }
 
 
@@ -343,6 +341,7 @@ body{
 }
 
 
+
 /* Proyectos */
 
 .carousel{
@@ -400,30 +399,29 @@ body{
 .carousel .list .item .introduce .topic{
     font-size: 2em;
     font-weight: 500;
-    color: #6556b7;
+    color: #ccc;
 }
 
 .carousel .list .item .introduce .des{
     width: 300px;
     font-size: small;
-    color: #ccc;
-    text-align: justify;
+    color: #aaa;
 }
 .carousel .list .item .introduce .des p {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .carousel .list .item .introduce .des .des__link {
-    color: #7446b7;
-    background-color: #222a;
-    padding: 4px 16px;
-    border-radius: 8px;
-    letter-spacing: 1.2px;
-    border: 0.5px solid #555;
-    transition: border 0.3s;
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: 1.5px solid #317ad1;
+    transition: 0.3s ease;
+    color: #ccc;
 }
 .carousel .list .item .introduce .des .des__link:hover {
-    border: 0.6px solid #5556b8;
-    background-color: #222;
+    transform: scale3d(1.03);
+    background-color: #2560a4;
+    color: #eee;
+    box-shadow: 0 0 5px #317ad1;
 }
 
 .carousel .list .item:nth-child(1){
@@ -557,15 +555,104 @@ body{
     border: none;
     cursor: pointer;
     margin: 0 5px;
-    border: 1px solid #ccc;
-    color: #bbb;
+    border: 1px solid #2560a4;
+    color: #999;
     transition: 0.3s;
-    background-color: #222;
+    background-color: #101325;
 }
 #prev:hover,
 #next:hover{
-    border: 1px solid #6556b7;
-    color: #6556b7;
+    border: 1px solid #317ad1;
+    color: #ddd;
+}
+
+
+.menu-hidden {
+    display: none;
+}
+
+.menu-visible {
+    display: block;
+    position: absolute;
+    padding: 20px;
+    background-color: #191f36;
+    border-radius: 8px;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 70vh;
+}
+
+.menus {
+    height: 100%; 
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.menu-visible button {
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    background-color: transparent;
+    color: #f00;
+    cursor: pointer;
+    scale: 2;
+}
+
+.menu-visible .menu__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-visible .menu__container .container__item {
+    width: 300px;
+    background-color: #101325;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-visible .menu__container .container__item img {
+    width: 250px;
+}
+
+.menu-visible .menu__container .container__item h4 {
+    color: #ddd;
+    margin-bottom: 6px;
+}
+
+.menu-visible .menu__container .container__item a {
+    padding: 2px 16px;
+    border-radius: 8px;
+    border: 1.5px solid #317ad1;
+    transition: 0.3s ease;
+    color: #ccc;
+}
+
+.menu-visible .menu__container .container__item a:hover {
+    transform: scale3d(1.03);
+    background-color: #2560a4;
+    color: #eee;
+}
+
+.menus::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menus::-webkit-scrollbar-track {
+    background: #191f36; 
+    border-radius: 5px; 
+}
+
+.menus::-webkit-scrollbar-thumb {
+    background: #2a3263; 
+    border-radius: 5px;
+}
+
+.menus::-webkit-scrollbar-thumb:hover {
+    background: #2a3263; 
 }
 
 
@@ -576,7 +663,6 @@ body{
     justify-content: space-evenly;
     flex-flow: row wrap;
     margin: auto;
-    gap: 10px;
 }
 .contacto__item {
     width: 400px;
@@ -601,7 +687,7 @@ body{
 .icons__item i {
     margin-right: 10px;
     font-size: 1.20rem;
-    background-color: #6556b7;
+    background-color: #2c3769;
     padding: 10px;
     color: #eee;
     border-radius: 50%;
@@ -611,27 +697,23 @@ body{
     color: #ccc;
 }
 .icons__item .icons__text span{
-    color: #eee;
+    color: #ddd;
     transition: color 0.3s;
 }
-
-.icons__item:hover i{
-    background-color: #5556b8;
-}
 .icons__item:hover .icons__text span {
-    color: #6556b7;
+    color: #317ad1;
 }
 
 
 
 form {
-    background: #111;
+    background: #191f36;
     padding: 10px 0;
     width: 450px;
     border-radius: 8px;
     position: relative;
     scale: 0.95;
-    box-shadow: 0 0 5px #5556b8;
+    box-shadow: 0 0 2px #ccc;
 }
 
 .form h3 {
@@ -672,6 +754,9 @@ label {
     cursor: pointer;
 }
 
+
+
+
 @media screen and (max-width: 991px) {
     /* Proyectos */
     .carousel .list .item{
@@ -681,12 +766,21 @@ label {
         width: 210px;
     }
 
+    /* Contacto */
     .contacto__item {
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 767px) {
+    /* Servicios */
+    .servicios__content {
+        gap: 10px
+    }
+    .servicios__item {
+        scale: 0.9;
+        padding: 8px;
+    }
     /* Skills */
     .slider__content {
         width: 80%;
@@ -717,10 +811,27 @@ label {
     .arrows{
         bottom: 30px;
     }
+
+
+    .menu-visible {
+        height: 65vh;
+    }
+    .menu-visible .menu__container .container__item {
+        width: 275px;
+    }
+
+    /* Contacto */
     .contacto__item:first-child {
         margin-left: 10px;
     }
     form {
         width: 350px;
+    }
+}
+
+@media screen and (max-width: 449px) {
+
+    .menu-visible .menu__container .container__item {
+        scale: 0.8;
     }
 }
