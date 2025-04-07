@@ -617,6 +617,11 @@ body{
 .menu-visible .menu__container .container__item img {
     width: 250px;
 }
+.menu-visible .menu__container .container__item:nth-child(2) img {
+    scale: 1.1;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 .menu-visible .menu__container .container__item h4 {
     color: #ddd;
