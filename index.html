@@ -26,18 +26,32 @@
             <div class="nav__pc">
                 <h3>Lexsor00</h3>
                 <ul class="header__ul">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#minecraft">Minecraft</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+                    <li><a href="#minecraft" data-i18n="nav.minecraft">Minecraft</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+                    <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
                 </ul>
-                <a href="https://github.com/Lexsor00" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow"><i class="fa-brands fa-github"></i></a>
+                <div class="language-switcher">
+                    <button id="language-toggle" aria-label="Change language">
+                        <span class="language-option active" data-lang="es">ES</span>
+                        <span class="language-separator">|</span>
+                        <span class="language-option" data-lang="en">EN</span>
+                    </button>
+                </div>
+                <a href="https://github.com/Lexsor00" target="_blank" rel="noopener noreferrer nofollow"><i class="fa-brands fa-github"></i></a>
             </div>
             <!-- Nav Tlf-->
             <div class="nav__tlf">
                 <h3>Lexsor00</h3>
+                <div class="language-switcher mobile">
+                    <button id="language-toggle-mobile" aria-label="Change language">
+                        <span class="language-option active" data-lang="es">ES</span>
+                        <span class="language-separator">|</span>
+                        <span class="language-option" data-lang="en">EN</span>
+                    </button>
+                </div>
                 <label class="menu-label">
                     <input type="checkbox">
                     <span class="icon-box">
@@ -45,12 +59,12 @@
                     </span>
                     <div class="hidden-buttons">
                         <ul class="header__ul--tlf">
-                            <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                            <li><a href="#servicios"><i class="fa-solid fa-tags"></i> Servicios</a></li>
-                            <li><a href="#minecraft"><i class="fa-solid fa-box"></i> Minecraft</a></li>
-                            <li><a href="#skills"><i class="fa-solid fa-hammer"></i> Skills</a></li>
-                            <li><a href="#proyectos"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
-                            <li><a href="#contacto"><i class="fa-solid fa-briefcase"></i> Contacto</a></li>
+                            <li><a href="#inicio"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Inicio</span></a></li>
+                            <li><a href="#servicios"><i class="fa-solid fa-tags"></i> <span data-i18n="nav.services">Servicios</span></a></li>
+                            <li><a href="#minecraft"><i class="fa-solid fa-box"></i> <span data-i18n="nav.minecraft">Minecraft</span></a></li>
+                            <li><a href="#skills"><i class="fa-solid fa-hammer"></i> <span data-i18n="nav.skills">Skills</span></a></li>
+                            <li><a href="#proyectos"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="nav.projects">Proyectos</span></a></li>
+                            <li><a href="#contacto"><i class="fa-solid fa-briefcase"></i> <span data-i18n="nav.contact">Contacto</span></a></li>
                         </ul>
                     </div>
                 </label>
@@ -62,12 +76,12 @@
         <section id="inicio">
             <div class="inicio">
                 <div class="inicio__title">
-                    <h2>Developer & Creador Digital</h2>
-                    <h4>Transformando ideas en experiencias digitales únicas y modernas</h4>
+                    <h2 data-i18n="home.title">Developer & Creador Digital</h2>
+                    <h4 data-i18n="home.subtitle">Transformando ideas en experiencias digitales únicas y modernas</h4>
                 </div>
                 <div class="inicio__button">
-                    <a href="#proyectos" class="btn btn1">Ver Proyectos</a>
-                    <a href="#contacto" class="btn">Contactar</a>
+                    <a href="#proyectos" class="btn btn1" data-i18n="home.projects">Ver Proyectos</a>
+                    <a href="#contacto" class="btn" data-i18n="home.contact">Contactar</a>
                 </div>
                 <div class="inicio__icon">
                     <i class="fa-solid fa-arrow-down"></i>
@@ -78,23 +92,23 @@
         <section id="servicios">
             <div class="servicios">
                 <div class="inicio__title servicios__title">
-                    <h3>Mis Servicios</h2>
+                    <h3 data-i18n="services.title">Mis Servicios</h3>
                 </div>
                 <div class="servicios__content">
                     <div class="servicios__item item--animado hidden" data-delay="0">
                         <img src="assets/multimedia/img/webdev.png" alt="Foto WebDesign">
-                        <h4>Desarrollo Web</h4>
-                        <p>Creación de sitios web modernos y responsivos.</p>
+                        <h4 data-i18n="services.webdev">Desarrollo Web</h4>
+                        <p data-i18n="services.webdev_desc">Creación de sitios web modernos y responsivos.</p>
                     </div>
                     <div class="servicios__item item--animado hidden" data-delay="1">
                         <img src="assets/multimedia/img/uiux.png" alt="Foto WebDesign">
-                        <h4>Diseño UI/UX</h4>
-                        <p>Interfaces y experiencias del usuario excepcionales.</p>
+                        <h4 data-i18n="services.uiux">Diseño UI/UX</h4>
+                        <p data-i18n="services.uiux_desc">Interfaces y experiencias del usuario excepcionales.</p>
                     </div>
                     <div class="servicios__item item--animado hidden" data-delay="2">
                         <img src="assets/multimedia/img/seo.png" alt="Foto WebDesign">
-                        <h4>SEO</h4>
-                        <p>Optimización y mejora de la visibilidad online.</p>
+                        <h4 data-i18n="services.seo">SEO</h4>
+                        <p data-i18n="services.seo_desc">Optimización y mejora de la visibilidad online.</p>
                     </div>
                 </div>
             </div>
@@ -103,48 +117,48 @@
         <section id="minecraft">
             <div class="servicios">
                 <div class="inicio__title servicios__title">
-                    <h3>Servicios Minecraft</h2>
+                    <h3 data-i18n="minecraft.title">Servicios Minecraft</h3>
                 </div>
                 <div class="servicios__content minecraft__content">
                     <div class="servicios__item minecraft__item">
                         <i class="fa-solid fa-wrench"></i>
-                        <h4>Configuración de Plugins</h4>
-                        <p>Instalación y configuración profesional de plugins para tu servidor.</p>
+                        <h4 data-i18n="minecraft.plugin_config">Configuración de Plugins</h4>
+                        <p data-i18n="minecraft.plugin_config_desc">Instalación y configuración profesional de plugins para tu servidor.</p>
                     </div>
                     <div class="servicios__item minecraft__item">
                         <i class="fa-solid fa-language"></i>
-                        <h4>Traducción de Plugins</h4>
-                        <p>Servicio de traducción precisa de plugins a múltiples idiomas.</p>
+                        <h4 data-i18n="minecraft.plugin_translation">Traducción de Plugins</h4>
+                        <p data-i18n="minecraft.plugin_translation_desc">Servicio de traducción precisa de plugins a múltiples idiomas.</p>
                     </div>
                     <div class="servicios__item minecraft__item">
                         <i class="fa-solid fa-server"></i>
-                        <h4>Configuración de Servidores</h4>
-                        <p>Configuración completa y optimización de servidores Minecraft.</p>
+                        <h4 data-i18n="minecraft.server_config">Configuración de Servidores</h4>
+                        <p data-i18n="minecraft.server_config_desc">Configuración completa y optimización de servidores Minecraft.</p>
                     </div>
                     <div class="servicios__item minecraft__item">
                         <i class="fa-brands fa-hive"></i>
-                        <h4>Network Bungee</h4>
-                        <p>Configuración profesional de redes BungeeCord/Velocity.</p>
+                        <h4 data-i18n="minecraft.bungee">Network Bungee</h4>
+                        <p data-i18n="minecraft.bungee_desc">Configuración profesional de redes BungeeCord/Velocity.</p>
                     </div>
                     <div class="servicios__item minecraft__item">
                         <i class="fa-solid fa-network-wired"></i>
-                        <h4>Configuración de GeyserMC</h4>
-                        <p>Integración de jugadores Bedrock en servidores Java.</p>
+                        <h4 data-i18n="minecraft.geyser">Configuración de GeyserMC</h4>
+                        <p data-i18n="minecraft.geyser_desc">Integración de jugadores Bedrock en servidores Java.</p>
                     </div>
                     <div class="servicios__item minecraft__item">
                         <i class="fa-solid fa-shop"></i>
-                        <h4>Tienda Tebex</h4>
-                        <p>Implementación y personalización de tiendas online.</p>
+                        <h4 data-i18n="minecraft.tebex">Tienda Tebex</h4>
+                        <p data-i18n="minecraft.tebex_desc">Implementación y personalización de tiendas online.</p>
                     </div>
                     <div class="servicios__item minecraft__item">
                         <i class="fa-brands fa-unity"></i>
-                        <h4>Temas Tebex</h4>
-                        <p>Instalación y personalización de temas para tu tienda Tebex.</p>
+                        <h4 data-i18n="minecraft.tebex_themes">Temas Tebex</h4>
+                        <p data-i18n="minecraft.tebex_themes_desc">Instalación y personalización de temas para tu tienda Tebex.</p>
                     </div>
                     <div class="servicios__item minecraft__item">
                         <i class="fa-solid fa-globe"></i>
-                        <h4>Sitios Web</h4>
-                        <p>Desarrollo de sitios web para ti o tu servidor.</p>
+                        <h4 data-i18n="minecraft.websites">Sitios Web</h4>
+                        <p data-i18n="minecraft.websites_desc">Desarrollo de sitios web para ti o tu servidor.</p>
                     </div>
                 </div>
             </div>
@@ -153,7 +167,7 @@
         <section id="skills">
             <div class="habilidades">
                 <div class="inicio__title servicios__title">
-                    <h3>Mis Skills</h2>
+                    <h3 data-i18n="skills.title">Mis Skills</h3>
                 </div>
                 <div class="slider">
                     <div class="slider__content">
@@ -201,7 +215,7 @@
         <section id="proyectos">
             <div class="servicios">
                 <div class="inicio__title servicios__title">
-                    <h3>Proyectos Destacados</h2>
+                    <h3 data-i18n="projects.title">Proyectos Destacados</h3>
                 </div>
                 <div class="carousel">
                     <div class="list">
@@ -212,8 +226,8 @@
                                     <h4>LexHub · Webs</h4>
                                 </div>
                                 <div class="des">
-                                    <p>Al hacer click podrás observar las diversas webs diseñadas.</p>
-                                    <a class="des__link" href="" rel="noopener" rel="noreferrer" rel="nofollow">Click para ver!</a>
+                                    <p data-i18n="projects.lexhub_desc">Al hacer click podrás observar las diversas webs diseñadas.</p>
+                                    <a class="des__link" href="" rel="noopener noreferrer nofollow" data-i18n="projects.click_see">Click para ver!</a>
                                 </div>
                             </div>
                         </div>
@@ -221,10 +235,10 @@
                             <img src="assets/multimedia/img/minesun.png" alt="Foto Network Minecraft">
                             <div class="introduce">
                                 <div class="topic">
-                                    <h4>Network Minecraft</h4>
+                                    <h4 data-i18n="projects.minecraft_network">Network Minecraft</h4>
                                 </div>
                                 <div class="des">
-                                    <p>Red de servidores Minecraft con soporte multiplataforma, tienda integrada y sistema de rangos.</p>
+                                    <p data-i18n="projects.minecraft_network_desc">Red de servidores Minecraft con soporte multiplataforma, tienda integrada y sistema de rangos.</p>
                                 </div>
                             </div>
                         </div>
@@ -235,8 +249,8 @@
                                     <h4>LexHub · Setups</h4>
                                 </div>
                                 <div class="des">
-                                    <p>Al hacer click podrás observar los diversos setups creados por mi.</p>
-                                    <a class="des__link abrir-menu2" href="" rel="noopener" rel="noreferrer" rel="nofollow">Click para ver!</a>
+                                    <p data-i18n="projects.setups_desc">Al hacer click podrás observar los diversos setups creados por mi.</p>
+                                    <a class="des__link abrir-menu2" href="" rel="noopener noreferrer nofollow" data-i18n="projects.click_see">Click para ver!</a>
                                 </div>
                             </div>
                         </div>
@@ -251,28 +265,23 @@
                             <div class="menu__container">
                                 <div class="container__item">
                                     <img src="assets/multimedia/img/questfotquality.png" alt="Web Foro">
-                                    <h4>Web Foro</h4>
-                                    <a class="des__link abrir-menu2" href="https://lexsor00.github.io/QuestForQuality/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ir!</a>
+                                    <h4 data-i18n="projects.forum_web">Web Foro</h4>
+                                    <a class="des__link abrir-menu2" href="https://lexsor00.github.io/QuestForQuality/" target="_blank" rel="noopener noreferrer nofollow" data-i18n="projects.click_go">Click para ir!</a>
                                 </div>
                                 <div class="container__item">
                                     <img src="assets/multimedia/img/danhub.png" alt="Web Restaurante">
-                                    <h4>Web Restaurante</h4>
-                                    <a class="des__link" href="https://lexsor00.github.io/danhub/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ir!</a>
+                                    <h4 data-i18n="projects.restaurant_web">Web Restaurante</h4>
+                                    <a class="des__link" href="https://lexsor00.github.io/danhub/" target="_blank" rel="noopener noreferrer nofollow" data-i18n="projects.click_go">Click para ir!</a>
                                 </div>
                                 <div class="container__item">
                                     <img src="assets/multimedia/img/lexrental.png" alt="Web Rental">
-                                    <h4>Web Rental</h4>
-                                    <a class="des__link" href="https://lexsor00.github.io/lexrental/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ir!</a>
+                                    <h4 data-i18n="projects.rental_web">Web Rental</h4>
+                                    <a class="des__link" href="https://lexsor00.github.io/lexrental/" target="_blank" rel="noopener noreferrer nofollow" data-i18n="projects.click_go">Click para ir!</a>
                                 </div>
                                 <div class="container__item">
                                     <img src="assets/multimedia/img/lexhosting.png" alt="Web Hosting">
-                                    <h4>Web Hosting</h4>
-                                    <a class="des__link" href="https://lexsor00.github.io/lexhosting/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ir!</a>
-                                </div>
-                                <div class="container__item">
-                                    <img src="assets/multimedia/img/emeraldwiki.png" alt="Wiki Emerald">
-                                    <h4>Wiki Emerald</h4>
-                                    <a class="des__link" href="https://lexsor00.github.io/emerald/index.html" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ir!</a>
+                                    <h4 data-i18n="projects.hosting_web">Web Hosting</h4>
+                                    <a class="des__link" href="https://lexsor00.github.io/lexhosting/" target="_blank" rel="noopener noreferrer nofollow" data-i18n="projects.click_go">Click para ir!</a>
                                 </div>
                             </div>
                         </div>
@@ -284,12 +293,12 @@
                                 <div class="container__item">
                                     <img src="assets/multimedia/img/landbox.png" alt="Setup LandBox">
                                     <h4>LandBox</h4>
-                                    <a class="des__link" href="https://builtbybit.com/resources/landbox-boxpvp-premium-setup.52192/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ir!</a>
+                                    <a class="des__link" href="https://builtbybit.com/resources/landbox-boxpvp-premium-setup.52192/" target="_blank" rel="noopener noreferrer nofollow" data-i18n="projects.click_go">Click para ir!</a>
                                 </div>
                                 <div class="container__item">
                                     <img src="assets/multimedia/img/portada-farmbox.png" alt="Setup FarmBox">
                                     <h4>FarmBox</h4>
-                                    <a class="des__link" href="https://builtbybit.com/resources/farmbox-boxpvp-premium-setup.64105/" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Click para ir!</a>
+                                    <a class="des__link" href="https://builtbybit.com/resources/farmbox-boxpvp-premium-setup.64105/" target="_blank" rel="noopener noreferrer nofollow" data-i18n="projects.click_go">Click para ir!</a>
                                 </div>
                             </div>
                         </div>
@@ -302,15 +311,15 @@
         <section id="contacto">
             <div class="servicios">
                 <div class="inicio__title servicios__title">
-                    <h3>Contacto</h2>
+                    <h3 data-i18n="contact.title">Contacto</h3>
                 </div>
                 <div class="contacto__content">
                     <div class="contacto__item">
-                        <h3>¡Cuentame sobre tu proyecto!</h3>
-                        <p>Estoy disponible para freelance. Contáctame y conversemos sobre cómo puedo ayudarte. Respondo en un periodo de 24h</p>
+                        <h3 data-i18n="contact.project_title">¡Cuentame sobre tu proyecto!</h3>
+                        <p data-i18n="contact.project_desc">Estoy disponible para freelance. Contáctame y conversemos sobre cómo puedo ayudarte. Respondo en un periodo de 24h</p>
                         <div class="icons">
                             <div class="icons__item">
-                                <a href="mailto:lexsor.dev@gmail.com" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">
+                                <a href="mailto:lexsor.dev@gmail.com" target="_blank" rel="noopener noreferrer nofollow">
                                     <i class="fa-regular fa-envelope"></i>
                                     <div class="icons__text">
                                         <p>Gmail</p>
@@ -319,7 +328,7 @@
                                 </a>
                             </div>
                             <div class="icons__item">
-                                <a href="https://discord.com/invite/HuPGx4atZk" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">
+                                <a href="https://discord.com/invite/HuPGx4atZk" target="_blank" rel="noopener noreferrer nofollow">
                                     <i class="fa-brands fa-discord"></i>
                                     <div class="icons__text">
                                         <p>Discord</p>
@@ -328,10 +337,10 @@
                                 </a>
                             </div>
                             <div class="icons__item">
-                                <a href="https://www.google.es/maps/place/Madrid/@40.4380986,-3.8443487,11z/data=!3m1!4b1!4m6!3m5!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167279!4d-3.7032905!16zL20vMDU2X3k?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">
+                                <a href="https://www.google.es/maps/place/Madrid/@40.4380986,-3.8443487,11z/data=!3m1!4b1!4m6!3m5!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167279!4d-3.7032905!16zL20vMDU2X3k?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D" target="_blank" rel="noopener noreferrer nofollow">
                                     <i class="fa-solid fa-map-location-dot"></i>
                                     <div class="icons__text">
-                                        <p>Ubicación</p>
+                                        <p data-i18n="contact.location">Ubicación</p>
                                         <span>Madrid, Spain</span>
                                     </div>
                                 </a>
@@ -341,29 +350,29 @@
                     <div class="form">
                         <form action="https://formspree.io/f/manyneoo" method="POST">
                             <div class="basic">
-                                <h3>Formulario de Contacto</h3>
+                                <h3 data-i18n="contact.form_title">Formulario de Contacto</h3>
                                 <div class="form-input">
-                                    <label><i class="fa-solid fa-user"></i> Nombre
+                                    <label><i class="fa-solid fa-user"></i> <span data-i18n="contact.name">Nombre</span>
                                         <input type="text" name="Nombre" placeholder="Lexsor00" required minlength="3">
                                     </label>
                                 </div>
                                 <div class="form-input">
-                                    <label><i class="fa-solid fa-envelope"></i> Email
+                                    <label><i class="fa-solid fa-envelope"></i> <span data-i18n="contact.email">Email</span>
                                         <input type="email" name="Email" placeholder="example@gmail.com" required>
                                     </label>
                                 </div>
                                 <div class="form-input">
-                                    <label><i class="fa-solid fa-phone"></i> Phone
+                                    <label><i class="fa-solid fa-phone"></i> <span data-i18n="contact.phone">Phone</span>
                                     <input type="text" name="Asunto" placeholder="+34 123 45 67 89" required>
                                     </label>
                                 </div>
                                 <div class="form-input">
-                                    <label><i class="fa-solid fa-file-pen"></i> Mensaje
+                                    <label><i class="fa-solid fa-file-pen"></i> <span data-i18n="contact.message">Mensaje</span>
                                         <textarea rows="6" name="mensaje" placeholder="Intenta dar los máximos detalles posibles..." required></textarea>
                                     </label>
                                 </div>
                                 <div class="form-input">
-                                    <input class="btn" type="submit" value="Enviar Formulario">
+                                    <input class="btn" type="submit" value="Enviar Formulario" data-i18n="contact.submit">
                                 </div>
                             </div>
                         </form>
@@ -375,7 +384,7 @@
     <footer>
         <div class="footer">
             <div class="footer__copy">
-                <a href="https://github.com/Lexsor00" target="_blank" rel="noopener" rel="noreferrer" rel="nofollow">Lexsor00 <i class="fa-regular fa-copyright"></i> 2026. All rights reserved</a>
+                <a href="https://github.com/Lexsor00" target="_blank" rel="noopener noreferrer nofollow">Lexsor00 <i class="fa-regular fa-copyright"></i> 2026. <span data-i18n="footer.rights">All rights reserved</span></a>
             </div>
         </div>
     </footer>
